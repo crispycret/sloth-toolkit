@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
 	name='sloth-toolkit',
-	version='0.0.1',
+	version='0.0.11',
 
 	author='crispycret',
 	packages=['sloth_toolkit'],
