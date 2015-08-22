@@ -92,7 +92,7 @@ class LazyUrl(object):
 
 	def is_valid_url(self):
 		is_str(self.url)
-		url = self.urlparse(self.url)
+		url = urlparse(self.url)
 		url.host = url.netloc
 		if url.shcheme not in self.allowed_schemes:
 			raise SchemeError(url.scheme, self.allowed_schemes)

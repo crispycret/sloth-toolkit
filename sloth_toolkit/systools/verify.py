@@ -10,10 +10,11 @@ def is_lazy_path(obj, ignore=False):
 	return is_type_of(obj, LazyPath, ignore)
 
 def get_current_path(_file_):
-	""" To get the path of a file, you must specify that """
+	""" To get the path of a file, you must pass __file__ """
 	return os.path.abspath(_file_)
 
 def show_current_path(_file_):
+	""" Print the path of a file, you must pass __file__ """
 	print get_current_path(_file_)
 
 
