@@ -1,5 +1,5 @@
 from .urls import LazyUrl
-from ..utils.verify import is_type_of
+from ..utilities.verify import is_type_of
 
 
 def is_lazy_url(obj, ignore=False):
